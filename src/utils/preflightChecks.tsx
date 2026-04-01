@@ -15,6 +15,10 @@ export interface PreflightCheckResult {
   sslHint?: string;
 }
 async function checkEndpoints(): Promise<PreflightCheckResult> {
+  // Skip connectivity check entirely - let users reach the login screen first.
+  // Users choosing OpenAI-compatible API don't need api.anthropic.com at all.
+  // Users choosing Anthropic will get proper errors at actual API call time.
+  return { success: true };
   try {
     const oauthConfig = getOauthConfig();
     const tokenUrl = new URL(oauthConfig.TOKEN_URL);
